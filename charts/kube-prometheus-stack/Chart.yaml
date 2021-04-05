@@ -38,12 +38,12 @@ dependencies:
 - name: kube-state-metrics
   version: "2.13.*"
   repository: https://kubernetes.github.io/kube-state-metrics
-  condition: kubeStateMetrics.enabled
+  condition: "true"
 - name: prometheus-node-exporter
   version: "1.16.*"
   repository: https://prometheus-community.github.io/helm-charts
-  condition: nodeExporter.enabled
+  condition: "true"
 - name: grafana
   version: "6.6.*"
   repository: https://grafana.github.io/helm-charts
-  condition: grafana.enabled
+  condition: "true"
